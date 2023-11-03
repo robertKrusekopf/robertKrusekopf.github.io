@@ -1,0 +1,16 @@
+<html>
+<body>
+<iframe id= "Anzeige1" src="https://docs.google.com/presentation/d/e/2PACX-1vS44xladdu8DW8MUfiBTsDs6NBVRXmH3-0_gBkDX29O8gSVFdgp8sDqvYhx8KLQTg/embed?start=true&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+   <script>
+        window.setInterval(function() {
+            reloadIFrame()
+        }, 3000);
+
+        function reloadIFrame() {
+            console.log('reloading..');
+            document.getElementById('Anzeige1').contentWindow.location.reload();
+        }
+    </script>
+</body>
+</html>
